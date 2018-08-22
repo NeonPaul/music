@@ -3,7 +3,7 @@ name: Music
 collections:
   songs:
     output: true
-    permalink: /:album/:title
+    permalink: /:title
 
 theme: jekyll-theme-dinky
 
