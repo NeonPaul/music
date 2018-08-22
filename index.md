@@ -1,7 +1,7 @@
 <h1>{{ site.name }}</h1>
 
 <ul>
-{% for post in site.songs %}
-  <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+{% for file in site.static_files %}
+  <li><a href="{{ file.path }}">{{ file.basename }}</a></li>
 {% endfor %}
 </ul>
