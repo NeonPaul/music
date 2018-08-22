@@ -1,0 +1,15 @@
+name: Music
+
+collections:
+  songs:
+    output: true
+    permalink: /:album/:title
+
+theme: jekyll-theme-dinky
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
