@@ -3,6 +3,6 @@
 <ul>
 {% assign tracks = site.static_files | where_exp: "file", "file.path contains 'tracks'" %}
 {% for file in tracks  %}
-  <li><a href="{{ site.basepath }}{{ file.path }}">{{ file.basename }}</a></li>
+  <li><a href="{{ site.baseurl }}{{ file.path }}">{{ file.basename }}</a></li>
 {% endfor %}
 </ul>
