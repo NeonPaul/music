@@ -3,7 +3,7 @@ name: Music
 collections:
   songs:
     output: true
-    permalink: /:title
+    permalink: /:path
 
 theme: jekyll-theme-dinky
 
@@ -13,3 +13,9 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+  -
+    scope:
+      path: ""
+      type: "songs" # a collection in your site, in plural form
+    values:
+      layout: "song"
