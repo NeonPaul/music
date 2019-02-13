@@ -11,4 +11,10 @@ layout: default
 <p><a href="{{ site.baseurl }}/{{ page.track }}" download>Download</a></p>
 {% endif %}
 
-<pre>{{ content }}</pre>
+{% assign splitContent = content | split: '<hr />' %}
+{% assign lyrics = splitContent | last %}
+{% if splitContent.size > 1 %}
+{{ splitContent | first }}
+{% endif %}
+
+<pre>{{ lyrics }}</pre>
